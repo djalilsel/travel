@@ -2,4 +2,14 @@
 @tailwind components;
 @tailwind utilities;
 
-
+body {
+  box-sizing: border-box;
+}
+.underline-shadow::after {
+  margin-top: 1px;
+  display: block;
+  content: " ";
+  height: 3px;
+  background: #e5b285;
+  box-shadow: 0 0 7px 1px #e5b285;
+}

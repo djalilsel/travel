@@ -13,3 +13,6 @@ body {
   background: #e5b285;
   box-shadow: 0 0 7px 1px #e5b285;
 }
+html {
+  scroll-behavior: smooth;
+}

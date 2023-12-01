@@ -1,7 +1,7 @@
 import React from "react";
 
 const Services = () => {
-  return <div>Our Services</div>;
+  return <div className="h-[91vh]">Our Services</div>;
 };
 
 export default Services;

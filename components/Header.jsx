@@ -8,70 +8,6 @@ const Header = () => {
     window.scrollTo({ top: position, behavior: "smooth" });
   };
   useEffect(() => {
-    // const homeOffset =
-    //   document.getElementById("home").offsetTop -
-    //   document.getElementById("home").offsetTop;
-    // const homeHight = document.getElementById("home").offsetHeight;
-    // const bookingOffset =
-    //   document.getElementById("booking").offsetTop -
-    //   document.getElementById("home").offsetTop;
-    // const bookingHight = document.getElementById("booking").offsetHeight;
-    // const aboutOffset =
-    //   document.getElementById("about").offsetTop -
-    //   document.getElementById("home").offsetTop;
-    // const aboutHight = document.getElementById("about").offsetHeight;
-    // const faqsOffset =
-    //   document.getElementById("faqs").offsetTop -
-    //   document.getElementById("home").offsetTop;
-    // const faqsHight = document.getElementById("faqs").offsetHeight;
-    // addEventListener("scroll", () => {
-    //   console.log(
-    //     window.scrollY + window.innerHeight,
-    //     homeOffset + homeHight / 2
-    //   );
-    //   if (window.scrollY > homeOffset + homeHight) {
-    //     document
-    //       .getElementById("homeTitle")
-    //       .classList.remove("underline-shadow");
-    //   } else if (
-    //     window.scrollY + window.innerHeight >=
-    //     homeOffset + homeHight / 2
-    //   ) {
-    //     document.getElementById("homeTitle").classList.add("underline-shadow");
-    //   }
-    //   if (window.scrollY + window.innerHeight > bookingOffset + bookingHight) {
-    //     document
-    //       .getElementById("bookingTitle")
-    //       .classList.remove("underline-shadow");
-    //   } else if (
-    //     window.scrollY + window.innerHeight >=
-    //     bookingOffset + bookingHight / 2
-    //   ) {
-    //     document
-    //       .getElementById("bookingTitle")
-    //       .classList.add("underline-shadow");
-    //   }
-    //   if (window.scrollY + window.innerHeight > aboutOffset + aboutHight) {
-    //     document
-    //       .getElementById("aboutTitle")
-    //       .classList.remove("underline-shadow");
-    //   } else if (
-    //     window.scrollY + window.innerHeight >=
-    //     aboutOffset + aboutHight / 2
-    //   ) {
-    //     document.getElementById("aboutTitle").classList.add("underline-shadow");
-    //   }
-    //   if (window.scrollY + window.innerHeight > faqsOffset + faqsHight) {
-    //     document
-    //       .getElementById("faqsTitle")
-    //       .classList.remove("underline-shadow");
-    //   } else if (
-    //     window.scrollY + window.innerHeight >=
-    //     faqsOffset + faqsHight / 2
-    //   ) {
-    //     document.getElementById("homeTitle").classList.add("underline-shadow");
-    //   }
-    // });
     addEventListener("scroll", () => {
       const homeOffset =
         document.getElementById("home").offsetTop +
@@ -159,7 +95,7 @@ const Header = () => {
       <ul className="flex gap-14 font-[500] text-lg">
         <li
           id="homeTitle"
-          className="cursor-pointer underline-shadow"
+          className="cursor-pointer underline-shadow-invisible underline-shadow"
           onClick={() => scrollLink(document.getElementById("home"))}
         >
           Home

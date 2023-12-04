@@ -5,6 +5,13 @@
 body {
   box-sizing: border-box;
 }
+.underline-shadow-invisible::after {
+  margin-top: 1px;
+  display: block;
+  content: " ";
+  height: 3px;
+  background: rgba(253, 253, 253, 0);
+}
 .underline-shadow::after {
   margin-top: 1px;
   display: block;
@@ -13,6 +20,12 @@ body {
   background: #e5b285;
   box-shadow: 0 0 7px 1px #e5b285;
 }
+
 html {
   scroll-behavior: smooth;
+}
+
+.hero-shadow {
+  background: #000000;
+  box-shadow: 0 0 50px 15px #0000003d;
 }
